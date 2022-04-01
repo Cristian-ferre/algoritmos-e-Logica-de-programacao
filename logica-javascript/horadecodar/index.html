@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>hora de codar </title>
+</head>
+<body>
+    <main class="container">
+        <div>
+            <h3>1. Escreva um programa em Javascript e crie uma variável chamada "nomeDoCarro" e atribua-a um   valor "Fusca".</h3>
+            <button onclick="exercicio1()">RUN</button>
+        </div>
+
+        <div>
+            <h3>2. Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a mensagem "Olá, [NomeDoUsuario]".</h3>
+            <button onclick="exercicio2()">RUN</button>
+        </div>
+
+        <div>
+            <h3>3. Escreva um programa em Javascript em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário. Agora o programa deve exibir a mensagem "Olá, [NomeDoUsuario], sua idade é [idade]".</h3>
+            <button onclick="exercicio3()">RUN</button>
+        </div>
+
+        <h1>4. Calculo de Áreas de Figuras Planas</h1>
+        <section>
+            <h2>Retângulo:</h2>
+            <p>para calcular a área do Retângulo preencher os campos abaixo</p>
+            
+            <label >Valor da Base:</label>
+            <input type="number" id="base">
+
+            <label >valor da Altura:</lqabel>
+            <input type="number" id="altura">
+                    
+            <button onclick="retangulo()" >calcular</button>
+            
+        <span class="resulretangulo"></span>   
+
+        </section>
+
+        <section>
+            <h2>Quadrado: </h2>
+            <p> calcular a área do Quadrado preencher os campos abaixo</p>
+
+            <label > Valor do Primeiro lado:</label>
+            <input type="number" id="l1">
+
+            <label >Valor do Segundo e ùltimo lado:</label>
+            <input type="number" id="l2">
+
+            <button onclick="quadrado()">calcular</button>
+
+            <span class="resulquadrado"></span>
+        </section>
+
+        <section>
+            <h2>Losangulo</h2>
+            <p>para calcular a área do Losangulo preencher os campos abaixo</p>
+
+            <label> valor da diagonal maior: </label>
+            <input type="number" id="d1">
+
+            <label>valor da diagonal menor: </label>
+            <input type="number" id="d2">
+
+            <button onclick="losangulo()">calcular</button>
+            <span class="resullosangulo"></span>
+        </section>
+
+        <section>
+            <h2>Trapézio</h2>
+            <p>para calcular a área do trapézio preencher os campos abaixo</p>
+
+            <label> valor da base maior: </label>
+            <input type="number" id="b1">
+
+            <label>valor base menor: </label>
+            <input type="number" id="b2">
+
+            <label >valor da Altura do trapézio: </label>
+            <input type="number" id="at">
+
+            <button onclick="trapezio()">calcular</button>
+            <span class="resultrapezio"></span>
+        </section>
+
+        
+        <section>
+            <h2>Paralelograma</h2>
+            <p>para calcular a área do paralelograma preencher os campos abaixo</p>
+
+            <label> valor da base: </label>
+            <input type="number" id="b">
+
+            <label>valor da altura: </label>
+            <input type="number" id="a">
+
+            <button onclick="paralelograma()">calcular</button>
+            <span class="resulparalelograma"></span>
+        </section>
+
+        <section>
+            <h2>Triângulo: </h2>
+            <p>para calcular a área do Triângulo preencher os campos abaixo</p>
+
+            <label > Valor da base:</label>
+            <input type="number" id="bas">
+
+            <label >Valor da altura:</label>
+            <input type="number" id="altur">
+
+            <button onclick="triangulo()">calcular</button>
+
+            <span class="resultriangulo"></span>
+        </section>
+
+        <section>
+            <h2>círculo: </h2>
+            <p>para calcular a área, perímetro, diâmetro ou raio do círculo preencher os campos abaixo</p>
+            <p>preenchar os campos que voçê tenha o valor e os outras serão calculados automaticamente </p>
+            <label >Valor do raio:</label>
+            <input type="number" id="raio">
+
+            <!--<label > Valor da área:</label>
+            <input type="number" id="area">
+
+            <label > Valor do diâmetro:</label>
+            <input type="number" id="diametro">
+
+            <label >Valor do perímetro:</label>
+            <input type="number" id="perimetro">-->
+
+            <button onclick="circulo()">calcular</button>
+
+            <!--<span class="resulcirculoarea"></span>-->
+            <span class="resulcirculoraio"></span>
+            <!--<span class="resulcirculodiametro"></span>
+            <span class="resulcirculoperimetro"></span>
+        - FUTURAMENTE OCORRERA UMA IMPLEMENTAÇÃO MAIOR
+        -->
+
+
+        </section>
+        
+    </main>
+
+    <script src="inde.js" defer></script>
+    
+</body>
+</html>

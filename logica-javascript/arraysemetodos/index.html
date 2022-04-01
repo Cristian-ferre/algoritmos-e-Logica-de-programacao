@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".css">
+    <title>arrays</title>
+</head>
+<body>
+    
+    <div>
+        <h2>exercicio de lógica 1</h2>
+        <p>Faça um algoritmo para ler 20 números e armazenar em um array. Após a leitura total dos 20 números, o algoritmo deve escrever esse array.</p>
+        <button onclick="exercicio1()">RUN</button>
+    </div>
+
+    <div>
+        <h2>exercicio de lógica 2</h2>
+        <p>. Faça um algoritmo para ler 12 números informados pelo usuário e armazenar em dois arrays: um com os números acima de 50. Outro com números abaixo de 50.</p>
+        <button onclick="exercicio2()">RUN</button>
+    </div>
+
+    <div >
+        <h3>exercicio de logica 3</h3>
+        <p>Drofo e Topper estão em uma aventura mágica. Faça um programa que contenha um inventário para cada um dos dois aventureiros - esse inventário será um array.
+            <br>
+        Drofo terá um anel da invisibilidade, dois pares de botas mágicas, uma poção do sono e duas poções da inocência em seu inventário e nessa ordem. 
+        Torper terá uma capa da invisibilidade, uma pedra do despertar,  uma varinha das varinhas, uma poção da inocência e duas poções da mentira, poção anti-inteligência e nessa ordem. 
+            
+        No meio de sua jornada, Torper consumiu uma das poções da mentira, perdeu sua pedra e ganhou um par de botar mágicas do Drofo, achou um escudo mágico e uma espada mágica. 
+        Descreva cada uma das ações acima. utilizando código (utilize comentários para ficar mais claro). 
+            
+        No meio da sua jornada, Drofo, ganhou mais uma bota mágica, usou sua poção do sono e consumiu a poção anti-inteligência do Torper, encontrou um ovo de dragão e uma coxinha.
+        Descreva cada uma das ações acima. utilizando código.
+            
+        Exiba o resultado final de cada um dos inventários utilizando "document.write"</p>
+        <button onclick="exercicio3()">RUN</button>
+    </div>
+
+    <div>
+        <h3>exercico de logica 4</h3>
+        <p>Machado de Assis!
+        Foi um escritor brasileiro, considerado por muitos críticos, estudiosos, escritores e leitores o maior nome da literatura brasileira. 
+            
+        A sua lista de obras: 
+            
+        Romances
+        Memorial de Aires (1908)
+        Ressurreição (1872)
+        Casa Velha (1885)
+        Memórias Póstumas de Brás Cubas (1881)
+        Helena (1876)
+        Quincas Borba (1891)
+        Esaú e Jacó (1904)
+        A mão e a luva (1874)
+        Dom Casmurro (1899)
+        Iaiá Garcia (1878)
+            
+        Coletânea de Poesias
+        Americanas (1875)
+        Ocidentais (1880)
+        Falenas (1870)
+        Crisálidas (1864)
+        Poesias Completas (1901)
+            
+        Coletânea de contos
+        Várias Histórias (1896)
+        Histórias sem Data (1884)
+        Papéis Avulsos (1882)
+        Contos Fluminenses (1870)
+        Histórias da Meia-Noite (1873)
+        Relíquias de Casa Velha (1906)
+        Páginas Recolhidas (1899)
+            
+        Para cada um dos grupos de obras acima, ordene e crie um array com as obras. 
+            
+        Agora, ainda utilizando código, crie mais um array e insira os três primeiros livros de cadagrupo de obras. </p>
+        <button onclick="exercicio4()">RUN</button>
+    </div>
+
+    <script>
+        function exercicio1(){
+        let numeros = [];
+        let contador = 1;
+        while(contador <= 4){
+            numeros[contador] = parseInt(prompt([("Informe " + contador +" número: ")]));
+            contador++
+        };
+
+        contador = 1;
+        while(contador <= 4){
+            alert(numeros[contador]);
+            contador++
+        };
+        };
+
+        function exercicio2(){
+            let numeros = [];
+            let contador = 1;
+
+            let numerosmaiorq = [];
+            let contador1 = 1;
+            let contadorresultadomaior = 1;
+
+            let numerosmenorq = [];
+            let contador2 = 1;
+            let contadorresultadomenor = 1;
+
+            while(contador <= 12){
+                numeros[contador] = parseInt(prompt(["Informe " + contador +"  número: "]));
+               contador++
+            };
+              
+            contador = 1;
+            while(contador <= 12){
+                if(numeros[contador] >= 50){
+                    numerosmaiorq[contador1] = numeros[contador];
+                    contador1++
+                };
+
+                if(numeros[contador] < 50){
+                    numerosmenorq[contador2] = numeros[contador];
+                    contador2++ 
+                };
+                contador++
+            };
+
+            while(contadorresultadomaior < contador1){
+                alert( numerosmaiorq[contadorresultadomaior])
+                contadorresultadomaior++
+            };
+
+            while(contadorresultadomenor < contador2){
+                alert(numerosmenorq[contadorresultadomenor])
+                contadorresultadomenor++
+            };
+        };
+
+        function exercicio3(){
+            let inventarioDrofo = ["anel da invisibilidade" , "dois pares de botas mágicas" , "uma poção do sono" , "duas poções da inocência" ];
+            alert("Drofo e Topper estão em uma aventura mágica. Drofo terá as seguintes coisas em seu inventário   " + inventarioDrofo[0] + ", " + inventarioDrofo[1] + ", " + inventarioDrofo[2] + ", " + inventarioDrofo[3]) 
+            
+            let inventarioTorper = ["capa da invisibilidade" , "uma pedra do despertar" , "uma varinha das varinhas" , "uma poção da inocência" , "duas poções da mentira"];
+            alert("Ja, Drofo terá as seguintes coisas em seu invetário   " + inventarioTorper[0] + ", " + inventarioTorper[1] + ", " + inventarioTorper[2] + ", " + inventarioTorper[3]) 
+
+            alert("No meio de sua jornada. Torper consumiu uma das poções da mentira, perdeu sua pedra e ganhou um par de botar mágicas do Drofo, achou um escudo mágico e uma espada mágica. ")
+            let novoinventarioTorper = [" capa da invisibilidade " , " par de botar mágicas do Drofo " , " achou um escudo mágico ", " uma espada mágica " , " uma varinha das varinhas " , " uma poção da inocência " , " duas poções da mentira "];
+
+            alert("No meio da sua jornada, Drofo, ganhou mais uma bota mágica, usou sua poção do sono e consumiu a poção anti-inteligência do Torper, encontrou um ovo de dragão e uma coxinha.")
+            let novoinventarioDrofo = [" anel da invisibilidade " , " dois pares de botas mágicas " , " encontrou um ovo de dragão " , " encontrou uma coxinha " ];
+            
+            {
+            document.write("Inventário de Topper: " + novoinventarioTorper);
+            document.write("Inventário de Drofo: " + novoinventarioDrofo);
+            return exercicio3
+            }
+        };
+
+        function exercicio4(){
+            let RomancesMachado = ["Memorial de Aires (1908)" , "Ressurreição (1872)" , "Casa Velha(1885)" , "Memórias Póstumas de Brás Cubas (1881)" , "Helena (1876)" ,"Quincas Borba (1891)" ,"Esaú e Jacó (1904)" ,"A mão e a luva (1874)" ,"Dom Casmurro (1899)" ,"Iaiá Garcia (1878)"];
+
+            let poesiasMachado = ["Americanas (1875)" , "Ocidentais (1880)" ,"Falenas (1870)" ,"Crisálidas (1864)" ,"Poesias Completas (1901)"];
+            
+            let contosMachado = ["Várias Histórias (1896)" ,"Histórias sem Data (1884)" ,"Papéis Avulsos (1882)" ,"Contos Fluminenses (1870)" ,"Histórias da Meia-Noite (1873)","Relíquias de Casa Velha (1906)" ,"Páginas Recolhidas (1899)"];
+
+            let novoRomancesMachado = [];
+            let novopoesiasMachado = [];
+            let novocontosMachado = [];
+            let contador = 0; 
+
+            alert("Machado de Assis!Foi um escritor brasileiro, considerado por muitos críticos, estudiosos, escritores e leitores o maior nome da literatura brasileira. A sua lista de obras: ");
+
+            alert("Três primeiros livros de Romance de machado de assis")
+            while(contador < 3){
+                novoRomancesMachado = RomancesMachado[contador];
+                alert(novoRomancesMachado);
+                contador++
+            };
+
+            alert("Três primeiros livros de Poesias de machado de assis")
+            contador = 0;
+            while(contador < 3){
+                novopoesiasMachado = poesiasMachado[contador];
+                alert(novopoesiasMachado);
+                contador++
+            };
+
+            alert("Três primeiros livros de contos de machado de assis")
+            contador = 0;
+            while(contador < 3){
+                novocontosMachado = contosMachado[contador];
+                alert(novocontosMachado);
+                contador++
+            };
+        };
+
+
+    </script>
+</body>
+</html>

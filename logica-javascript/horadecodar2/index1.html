@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Hora de codar 2</title>
+</head>
+<body>
+<main>
+    <button onclick="exercicio1()">1. Escreva um programa em que o usuário informe dois números utilizando o "prompt". Então escreva em tela o maior deles.</button>
+
+    <button onclick="exercicio2()">2. Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero.</button>
+    
+
+    <button onclick="exercicio3()">3. Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+    </button>
+
+    <button onclick="exercicio4()">4. Faça um programa que leia 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+
+    <button onclick="exercicio5()">5. Faça um programa que leia dois valores informados pelo usuário e exiba uma das três mensagens a seguir: "Números iguais", caso os números sejam iguais "Primeiro é maior", caso o primeiro seja maior que o segundo; "Segundo maior", caso o segundo seja maior que o primeiro.
+
+    <button onclick="exercicio6()">6. Faça um programa que leia 10 valores informados pelo usuário, calcule, exiba os números informados e escreva a média aritmética desses valores lidos.
+
+    <button onclick="exercicio7()">7. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes)
+
+    <button onclick="exercicio8()">8. Faça um programa que leia 10 números informados pelo usuário e ao final da leitura escrever a soma total dos 10 números lidos.
+
+    <button onclick="exercicio9()">9. Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.
+
+    <button onclick="exercicio10()">10. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+
+    <button onclick="exercicio11()">11 - Um motorista de táxi deseja calcular o rendimento de seu carro na praça.
+    <br>
+    Sabendo-se que o preço do combustível é de R$ 2,90, escreva um programa para ler: a marcação do odômetro (Km) no início do dia, a marcação (Km) no final do dia, o número de litros de combustível gasto e o valor total (R$) recebido dos passageiros. Calcular e escrever: a média do consumo em Km/L e o lucro (líquido) do dia.
+
+    <button onclick="exercicio12()">12 - A equipe Mercedes deseja calcular o número mínimo de litros que deverá colocar no tanque de seu carro para que ele possa percorrer um determinado número de voltas até o primeiro reabastecimento.
+    <br>
+    Escreva um programa que leia o comprimento da pista (em metros), o número total de voltas a serem percorridas no grande prêmio, o número de reabastecimentos desejados e o consumo de combustível do carro (em Km/L).  
+    O programa deve calcular e exibir o número mínimo de litros necessários para percorrer até o primeiro reabastecimento. 
+    Observação: considere que a quantidade de voltas entre os reabastecimentos é o mesmo, mas não poderá ser maior ou igual a 2.    
+    usuário deve informar a quantidade de quilômetros total do circuito e a quantidade de litros que o carro pode possuir. 
+    </button>
+
+    <button onclick="exercicio13e14()">13 - Escreva um programa para ler as notas das 4 avaliações de um aluno no semestre, calcular e escrever a média semestral e a seguinte mensagem: PARABÉNS! Você foi aprovado! somente se o aluno foi aprovado (considere 6.0 a média mínima para aprovação e 4 notas informadas).
+    <br>
+    14 - Acrescente ao exercício anterior a mensagem "Infelizmente, você foi reprovado!" caso a média calculada seja menor que 6.0.
+    </button>
+
+    <button onclick="exercicio15()">15 - Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).</button>
+   
+    <button onclick="exercicio16()">16 - As maçãs custam R$ 0,30 cada se forem compradas menos do que uma dúzia, e R$ 0,25 se forem compradas pelo menos doze. Escreva um programa que leia o número de maçãs compradas (considere que o usuário informará a quantidade), e calcule e escreva o valor total da compra.
+    </button>
+
+    <button onclick="exercicio17()">17 - Escreva um programa que verifique a validade de uma senha fornecida pelo usuário. A senha válida é o número "1234" sem aspas. Devem ser impressas as seguintes mensagens: "ACESSO PERMITIDO" caso a senha seja válida. "ACESSO NEGADO" caso a senha seja inválida.
+    </button>
+
+    <button onclick="exercicio18()">18 - Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1: feminino 2: masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas:
+    </button>
+
+    <button onclick="exercicio19()">19 - Escreva um programa para ler o número de gols marcados pelo Grêmio e o número de gols marcados pelo Inter em um GRENAL. Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
+    </button>
+
+    <button onclick="exercicio20()">20 - Escreva um programa para ler o número de lados de um polígono regular e a medida do lado (em cm).
+    <br>
+    Calcular e imprimir o seguinte: 
+    Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor do seu perímetro. 
+    Se o número de lados for igual a 4 escrever QUADRADO e o valor da sua área. 
+    Se o número de lados for igual a 5 escrever PENTÁGONO. 
+        <br>
+    Observação: Considere que o usuário só informará os valores 3, 4 ou 5. 
+        <br>
+    Caso o número de lados seja inferior a 3 escrever NÃO É UM POLÍGONO. 
+    Caso o número de lados seja superior a 5 escrever POLÍGONO NÃO IDENTIFICADO.
+    </button>
+
+    <button onclick="exercicio21()">21 - Escreva um programa que leia as notas das duas avaliações normais e a nota da avaliação optativa. Calcular a média do semestre considerando que a prova optativa substitui a nota mais baixa entre as duas primeiras avaliações. Escrever a média e mensagens que indiquem se o aluno foi aprovado, reprovado ou está em exame, de acordo com as informações abaixo:</button>
+
+    <button onclick="exercicio22()">22. A Loja Remi du Fromage está com uma promoção onde cada capacete artesanal para tartaruga custa R$18.230 e pode ser pago em até 15 vezes sem juros. Crie um programa onde o usuário possa informar o valor parcelas que deseja pagar e exiba o valor de cada parcela.</button>
+
+    <button onclick="exercicio23()">23 - Faça um programa em que o usuário informe 20 valores e no final, escreva o maior e o menor valor lido.</button>
+
+    <button onclick="exercicio24()">24 - Um zoológico muito louco
+        <br>
+    Escreva um programa que leia a idade de 2 javalis e 2 girafas (considere que a idade dos javalis será sempre diferente, assimcomo das girafas ). Calcule e escreva a soma das idades do javali mais velho com a girafa mais nova, e o produto das idadesdo javali mais novo com a girafa mais velha.</button>
+
+    <button onclick="exercicio25()">25 - Uma micro calculadora
+        <br>
+        Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem
+        executadas (codificada da seguinte forma: 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação).
+        O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. Observação: Considere
+        que só serão lidos os valores 1, 2, 3 ou 4 para as operações</button>
+    </main>
+
+
+    <script>
+
+    
+
+    function exercicio1(){   
+        let n1 = parseInt(prompt("Informe o Primeiro numero: "));
+        let n2 = parseInt(prompt("informe o segundo numero: "));
+        
+        if (n1.length == 0){
+            n1 = 0
+        };
+
+        if (n2.length == 0){
+            n2 = 0
+        };
+
+        if (n1 > n2 && n1 > 0){
+            alert("O maior Numero é o primeiro, " + n1)
+
+        } ;
+
+        if(n2 > n1 && n2 > 0){
+            alert("O maior Numero é o segundo, " + n2)
+        };
+    }  ;
+    
+    function exercicio2(){
+        let v1 = parseInt(prompt("informe um valor: "));
+
+        if(v1 < 1){
+            alert("o valor " + v1 + " negativo")
+        }else {
+            alert("o valor " + v1 + " é positivo")
+        }
+    };
+
+    function exercicio3(){
+        let v1 = parseInt(prompt("Insira o Primeiro Número:"));
+        let v2 = parseInt(prompt("Insrira o segundo Número:"));
+        let v3 = parseInt(prompt("insira o terceiro e ùltimo Número: "));
+
+        if(v1 > v2 && v2 < v1){
+
+            if (v1 > v3 && v3 < v1){
+                alert("O maior de todos, é o primeiro valor digitado: " + v1);
+            };
+            if (v3 > v1 && v1 < v3){
+                alert(" O maior de todos, é o terceiro valor digitado: " + v3);
+            }
+        };
+
+        if(v2 > v1 && v1 < v2){
+
+            if (v2 > v3 && v3 < v2){
+                alert("O maior de todos, é o segundo valor digitado: " + v2);
+            };
+
+            if (v3 > v2 && v2 < v3){
+                alert("O maior de todos, é o terceiro valor digitado: " + v3);
+            }
+        };
+    };
+
+    function exercicio4(){
+        let v1 = parseInt(prompt("Insira o Primeiro Nùmero:"));
+        let v2 = parseInt(prompt("Insrira o segundo Número:"));
+        let v3 = parseInt(prompt("insira o terceiro e ùltimo Numero: "));
+
+        if(v1 > v2 && v2 < v1){
+
+            if(v3 < v2 && v2 > v3){
+                let doismaiores = v1 + v2;
+                alert("A soma entre os maiores dois  "+ v1 + " + " + v2 + " é " + doismaiores);
+            };
+
+            if (v2 < v3 && v3 > v2){
+                let doismaiores = v1 + v3;
+                alert("A soma entre os maiores "+ v1 + " + " + v3 + " é " + doismaiores);
+            };
+        };
+
+        if(v2 > v1 && v1 < v2){
+
+            if(v3 < v1 && v1 > v3){
+                let doismaiores = v1 + v2;
+                alert("A soma entre os maiores "+ v1 + " + " + v2 + " é " + doismaiores);
+            };
+
+            if(v2 < v3 && v3 > v2){
+                let doismaiores = v2 + v3;
+                alert("A soma entre os maiores "+ v2 + " + " + v3 + "é" + doismaiores);
+            };
+        };
+    };
+
+    function exercicio5() {
+        let v1 = parseInt(prompt("Insira o Primeiro Número: "));
+        let v2 = parseInt(prompt("Insira o Segundo Número: "));
+
+        if(v1 === v2){
+            alert("Números iguais")
+        }else {
+            alert("Números diferentes")
+        };
+
+        if(v1 > v2){
+            alert("primeiro maior:  " + v1);
+        }else if (v2 > v1){
+            alert("segundo maior:  " + v2);
+        };
+    };
+
+    function exercicio6() {
+        let contador = 0;
+        let v1soma = 0;
+        
+        while (contador < 10 ){
+            let v1 = parseInt(prompt("Digite " +contador+ "  valor: "));
+            v1soma = v1 + v1soma;
+            contador++
+        };
+    
+        let v1media = v1soma / contador;
+        alert("O total dos valores digitados " + v1soma + "  e a média é  " + v1media);
+    }    
+
+    function exercicio7(){
+
+        let n1 = parseInt(prompt("Digite valor: "));
+        let n2 = parseInt(prompt("Digite valor: "));
+        let n3 = parseInt(prompt("Digite valor: "));
+        let n4 = parseInt(prompt("Digite valor: "));
+
+        alert("O primeiro valor digitado é  "+ n1);
+        alert("O segundo valor digitado é "+ n2);
+
+        if(n1 > n2 && n2 < n1){
+            let v1maior = n1;
+        };
+
+        if(n2 > n1 && n1 < n2){
+            v1maior = n2;
+        };
+
+        if(n3 > n4 && n4 < n3 ){
+            let v2maior = n3;
+        };
+
+        if(n4 > n3 && n3 < n4){
+            v2maior = n4;
+        };
+
+        if(v1maior > v2maior && v2maior < v1maior){
+        alert("O maior valor digitado é " + v1maior)
+        };
+
+        if(v2maior > v1maior && v1maior < v2maior){
+            alert("O maior valor digitado é " + v2maior)
+        };
+    };
+
+    function exercicio8(){
+        let contador = 1;
+        let totalValores = null;
+        while(contador <= 10){
+            let valores = parseInt(prompt("Digite o " + contador + " valor: "));
+            totalValores = valores + totalValores ;
+            contador++
+        };
+
+        alert("A soma total de valores digitados pelo usuário foi de " + totalValores);
+    };
+
+    function exercicio9(){
+        let contador = 1;
+        let numeros = null;
+        let maiorq = null;
+        let totalValores = null;
+        while(contador <= 6){
+            numeros = parseInt(prompt("Digite o " + contador + " valor: "));
+            if(numeros < 72){
+                maiorq = numeros + maiorq;
+            };
+            totalValores = numeros + totalValores ;
+            contador++
+        };
+        alert("A soma entre os valores digitados, que for menor que 72 é " + maiorq);
+        alert("A soma total de valores digitados pelo usuário foi de " + totalValores);
+    };
+
+    function exercicio10(){
+        let contador = 0;
+        let soma = null;
+        let numeros = null;
+        
+        while(contador <= 4){
+            numeros = parseInt(prompt("Digite o " + contador + " Nota: "))
+            if(numeros > 0 && numeros <= 10){
+                soma = numeros + soma; 
+            };
+            contador++
+        };
+
+        let media = soma / contador;
+        if(media > 5 ){
+            alert("MÉDIA: " + media + " - Com a média maior que 5, você passou no teste, Parabêns!!!!!  " );
+        }else{
+            alert("Sua média foi de "+media+" por conta disso.Tente novamente!!");
+        };
+    };
+
+    function exercicio11(){
+        let preçocombustivel = 2.90;
+        let odometroinicial = parseInt(prompt("Marcação do odômetro inicial: "));
+        let odometrofinal = parseInt(prompt("Marcação do odômetro final: "));
+        let litrosgastos = parseInt(prompt("Listros gasto no dia: "));
+        let valortotalviajens = parseInt(prompt("valor total recebidos pelos passageiros: "))
+
+        let kmTotal = parseInt(odometroinicial - odometrofinal);
+        kmTotal = Math.abs(kmTotal)
+
+        let kmLitro =  kmTotal / litrosgastos ;
+        alert("A média do KM/L: " + kmLitro + "  quilometros por litro");
+
+        let precolitrosgastos = litrosgastos * preçocombustivel;
+
+        let lucroDia = valortotalviajens - precolitrosgastos;
+        alert("Lucro total do dia: " + lucroDia);
+    };
+
+    function exercicio12(){
+    /*12 - A equipe Mercedes deseja calcular o número mínimo de litros que deverá colocar no tanque de seu carro para que ele possa percorrer um determinado número de voltas até o primeiro reabastecimento.
+    Escreva um programa que leia o comprimento da pista (em metros), o número total de voltas a serem percorridas no grande prêmio, o número de reabastecimentos desejados e o consumo de combustível do carro (em Km/L).  
+    O programa deve calcular e exibir o número mínimo de litros necessários para percorrer até o primeiro reabastecimento. 
+    Observação: considere que a quantidade de voltas entre os reabastecimentos é o mesmo, mas não poderá ser maior ou igual a 2.    
+    usuário deve informar a quantidade de quilômetros total do circuito e a quantidade de litros que o carro pode possuir. */
+
+        //essa vou fazer depois!!!!!
+        //não ficou nada claro o enunciado
+    }
+
+    function exercicio13e14(){
+        let contador = 0;
+        let notas = null;
+        let somanotas = null;
+        while(contador < 4){
+            notas = parseInt(prompt("qual a nota do "+ contador + " Bimestre"));
+            somanotas = notas + somanotas;
+            contador++
+        };
+        let medianotas = somanotas / contador;
+        
+        if(medianotas >= 6.0){
+            alert("MEDIA: " + medianotas + "   - PARABÉNS! Você foi aprovado! ")
+        }else if(medianotas < 6.0){
+            alert("MEDIA: " + medianotas + "  - você foi REPROVADO")
+        };
+    }
+
+    function exercicio15(){
+        let nome = prompt("Bem vindo!!    - digite o seu nome:");
+        let anoNascimento = parseInt(prompt("Informe o ano do seu nascimento " + nome + ": "));
+        let anoAtual = 2022;
+        let idade = anoAtual - anoNascimento;
+        let quantofalta = 18 - idade;
+        
+        if(idade >= 18){
+            alert("Com a idade de " + idade + " você está apto para votar")
+        }else{
+            if(idade < 18){
+                alert("você não pode votar, só faltão " + quantofalta + " anos.")
+            };
+        };
+    };
+
+    function exercicio16(){
+        let macascomprada = parseInt(prompt("Numero de maçãs compradas: "))
+        if(macascomprada >= 12){
+            alert(macascomprada * 0.25 + " Reais");
+        }else if(macascomprada < 12){
+            alert(macascomprada * 0.30 + " Reais");
+        };
+    };
+
+    function exercicio17(){
+        const senhaProa = 1234;
+        let senhaInserida = parseInt(prompt("PARA ENTRAR, INFORME A SENHA DE 4 DIGITOS"));
+
+        if(senhaProa === senhaInserida){
+            alert("ACESSO PERMITIDO")
+        }else{
+            alert("ACESSO NEGADO")
+        };
+    };
+
+    function exercicio18(){
+       const sexo = prompt("Informe seu sexo: ");
+       const altura = parseFloat(prompt("Informe sua Altura: "));
+       
+       if(sexo === "masculino"){
+            let  pesom = (72.7 * altura)- 58
+            alert("seu peso ideal seria de " + pesom );
+       }else if(sexo === "feminino"){
+            let pesof = (62.1 *altura) - 44.7
+            alert("seu peso ideal seria de " + pesof );
+       };
+    };
+
+    function exercicio19(){
+     
+        const gremio = parseInt(prompt("Gols marcado pelo Grêmio: "));
+        const inter = parseInt(prompt("Gols marcado pelo Inter: "));
+
+        if (gremio > inter){
+            alert("grêmio campeâo")
+        }else if (inter > gremio){
+            alert("Inter campeâo")
+        }else if (inter === gremio){
+            alert("EMPATE")
+        };
+    }; 
+
+    function exercicio20(){
+
+    let numerosLados = parseInt(prompt("Informe o numero de lados: "));
+    let medidalado = null;
+    let valor = null;
+    let contador = 1;
+    if(numerosLados === 3){
+        while(contador <= numerosLados){
+            medidalado = parseInt(prompt("Informe os centrimetros do " + contador + " lado:"))
+            valor = medidalado + valor; 
+            contador++
+        };
+    alert("TRIÂNGULO:  " + valor)
+    }else if (numerosLados === 4){
+        medidalado = parseInt(prompt("Informe o valor do lado do Quadrado: "))
+        valor = medidalado * medidalado;
+        alert("QUADRADO:  " + valor)
+    }else if(numerosLados === 5){
+        alert("PENTAGONO")
+    }else{
+        if(numerosLados < 3){
+            alert("NÃO É UM POLÍGONO")
+        }else if(numerosLados > 5){
+            alert("POLÍGONO NÃO IDENTIFICADO.")
+        };
+    };
+    };
+
+    function exercicio21() {
+    
+        let nota = null;
+        let contador = 1;
+        let somanota = null;
+        nota = parseInt(prompt("Informe a " + contador + ": "));
+        somanota = somanota + nota;
+        let notamenor = nota;
+        
+        while(contador <= 3){
+            contador++
+            nota = parseInt(prompt("Informe a " + contador + ": "));
+            if(nota < notamenor){
+                notamenor = nota;
+            }; 
+            somanota = somanota + nota;
+        };
+            let resposta = prompt("Sua menor nota foi " + notamenor +"   - Você deseja refazela (sim/não)")
+        
+            if(resposta === "sim"){
+                somanota = somanota - notamenor;
+                alert("OK, qual foi sua nota agora")
+                notamenor = parseInt(prompt("Informe a " + contador + ": "));
+                somanota = notamenor + somanota;
+            };
+
+            if (resposta === "nao"){
+                alert("OK, esse então foi o seu desempenho. ")
+
+            };
+        let media = somanota / contador;
+        if(media >= 6){
+            alert("media: " + media + "  APROVADO")
+        }else if(media < 3){
+            alert("media: " + media + "  REPROVADO")
+        }else if(media >= 3 && media < 6){
+            alert("media: " + media + "  EXAME")
+        };
+    };
+
+    function exercicio22(){
+ 
+        alert(" Loja Remi du Fromage está com uma promoção onde cada capacete artesanal para tartaruga custa R$18.230 e pode ser pago em até 15 vezes sem juros.")
+        const valor = 18.230;
+        let nParcelas = parseInt(prompt("Informe o número de parcelas: "));
+        alert("O valor das pracelas será de " + valor / nParcelas);
+    };
+
+    function exercicio23(){
+       
+        let contador = 1;
+        valorInformado = parseInt(prompt("Informe o " + contador + " numero:"))
+        let valorMaior = valorInformado;
+        let valorMenor = valorInformado;
+        while(contador < 20){
+            contador++
+            valorInformado = parseInt(prompt("Informe o " + contador + " numero:"))
+            if(valorInformado > valorMaior){
+                valorMaior = valorInformado;
+            };
+
+            if(valorInformado < valorMenor){
+                valorMenor = valorInformado;
+            };  
+        };
+        alert("O maior valor digitado é " + valorMaior);
+        alert("O menor valor digitado é " +valorMenor);
+    };
+
+    function exercicio24(){
+
+        let idadejavali1 = parseInt(prompt("qual a sua idade javali 1: ")); 
+        let idadejavali2 = parseInt(prompt("qual a sua idade javali 2: "));
+        let idadegirafa1 = parseInt(prompt("qual a sua idade girafa 1: "));
+        let idadegirafa2 = parseInt(prompt("qual a sua idade girafa 2: "));
+        let idademaiorgirafa = null;
+        let idademaiorjavali = null;
+        let idademenorgirafa = null;
+        let idademenorjavali = null;
+        if (idadegirafa1 > idadegirafa2){
+            idademaiorgirafa = idadegirafa1;
+        };
+        if (idadegirafa2 > idadegirafa1){
+            idademaiorgirafa = idadegirafa2;
+        };
+        
+        if(idadegirafa1 < idadegirafa2){
+            idademenorgirafa = idadegirafa1;
+        };
+        if(idadegirafa2 < idadegirafa1){
+            idademenorgirafa = idadegirafa2;
+        };
+        alert(idademaiorgirafa);
+        alert(idademenorgirafa);
+        
+        if (idadejavali1 > idadejavali2){
+            idademaiorjavali =  idadejavali1;
+        };
+        if (idadejavali2 > idadejavali1){
+            idademaiorjavali = idadejavali2;
+        };
+        
+        if(idadejavali1 < idadejavali2){
+            idademenorjavali = idadejavali1;
+        };
+        if(idadegirafa2 < idadejavali2){
+            idademenorjavali = idadejavali2;
+        };
+
+        alert(idademaiorjavali);
+        alert(idademenorjavali);
+
+        alert("soma das idades do javali mais velho com a girafa mais nova:  " + (idademaiorjavali + idademenorgirafa));
+        alert("produto das idades do javali mais novo com a girafa mais velha: " +  (idademenorjavali * idademaiorgirafa) );
+    };
+
+    function exercicio25(){
+
+    alert("micro calculadora - Informe os valores para realizar as operações de 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação")
+    
+    const valor1 = parseInt(prompt("Digite o Primeiro valor: "));
+    const valor2 = parseInt(prompt("Digite o Segundo valor: "));
+
+    alert(valor1 + valor2);
+    alert(valor1 - valor2);
+    alert(valor1 / valor2);
+    alert(valor1 * valor2);
+    };
+    
+    </script>
+    
+</body>
+</html>
